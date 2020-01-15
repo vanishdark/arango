@@ -1,5 +1,5 @@
 export interface ModelDefinition {
-  name: string;
-  document: string;
-  collection: string;
+    name: string;
+    document: string;
+    collection: string;
 }

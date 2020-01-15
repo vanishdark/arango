@@ -1,6 +1,6 @@
 {
   "name": "nestjs-arango",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "simple wrapp module for arangojs to nestjs",
   "scripts": {
     "build": "rm -rf dist && tsc -p tsconfig.json",

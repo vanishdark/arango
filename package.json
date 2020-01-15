@@ -1,0 +1,42 @@
+{
+  "name": "nestjs-arango",
+  "version": "1.0.0",
+  "description": "simple wrapp module for arangojs to nestjs",
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "precommit": "lint-staged",
+    "prepublish:npm": "npm run build",
+    "publish:test": "npm install",
+    "publish:npm": "npm publish --access public",
+    "prepublish:next": "npm run build",
+    "publish:next": "npm publish --access public --tag next"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^6.7.2",
+    "@nestjs/core": "^6.7.2",
+    "@nestjs/platform-express": "^6.7.2",
+    "arangojs": "^6.12.0",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "8.6.2",
+    "rimraf": "^3.0.0",
+    "rxjs": "6.5.4",
+    "rxjs-compat": "6.5.4",
+    "typescript": "3.7.4"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^6.0.0",
+    "@nestjs/core": "^6.0.0",
+    "arangojs": "^6.12.0",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^6.0.0"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "author": "joao tomaz",
+  "license": "MIT",
+  "repository": "https://github.com/vanishdark/arango"
+}

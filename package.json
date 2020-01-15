@@ -38,5 +38,11 @@
   },
   "author": "joao tomaz",
   "license": "MIT",
-  "repository": "https://github.com/vanishdark/arango"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vanishdark/arango.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@vanishdark"
+  }
 }
